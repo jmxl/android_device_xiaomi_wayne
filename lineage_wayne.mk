@@ -21,22 +21,23 @@
 # definition file).
 #
 
-# Inherit device configuration
-$(call inherit-product, device/xiaomi/wayne/device.mk)
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Inherit from Havoc custom product configuration
-$(call inherit-product, vendor/havoc/config/common.mk)
-TARGET_VENDOR_PRODUCT_NAME := wayne
+# Inherit from wayne device
+$(call inherit-product, $(LOCAL_PATH)/device.mk)
+
+PRODUCT_NAME := lineage_wayne
+PRODUCT_BRAND := Xiaomi
+PRODUCT_DEVICE := wayne
+PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_MODEL := Mi 6X
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
+    TARGET_DEVICE="wayne" \
+    PRODUCT_NAME="wayne" \
     PRIVATE_BUILD_DESC="wayne-user 8.1.0 OPM1.171019.011 V9.5.11.0.ODCCNFA release-keys"
 
-BUILD_FINGERPRINT := xiaomi/wayne/wayne:8.1.0/OPM1.171019.011/V9.5.11.0.ODCCNFA:user/release-keys
+BUILD_FINGERPRINT := "xiaomi/wayne/wayne:8.1.0/OPM1.171019.011/V9.5.11.0.ODCCNFA:user/release-keys"
 
-# Device identifier
-PRODUCT_BRAND := Android
-PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_PLATFORM := SDM660
-PRODUCT_NAME := havoc_wayne
-PRODUCT_DEVICE := wayne
-PRODUCT_MODEL := MI 6X
+TARGET_VENDOR_PRODUCT_NAME := wayne

@@ -29,7 +29,8 @@ DEVICE_PATH := device/xiaomi/wayne
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-	$(DEVICE_PATH)/overlay
+	$(DEVICE_PATH)/overlay \
+	$(DEVICE_PATH)/overlay-lineage
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -67,7 +68,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-	 android.hardware.light@2.0-service.xiaomi_wayne
+	android.hardware.light@2.0-service.xiaomi_wayne
 
 # Media
 PRODUCT_COPY_FILES += \
