@@ -34,10 +34,10 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Mi 6X
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE="wayne" \
     PRODUCT_NAME="wayne" \
-    PRIVATE_BUILD_DESC="wayne-user 8.1.0 OPM1.171019.011 V9.5.11.0.ODCCNFA release-keys"
+    TARGET_DEVICE="wayne" \
+    PRIVATE_BUILD_DESC="taimen-user 9 PQ1A.190105.004 5148680 release-keys"
 
-BUILD_FINGERPRINT := "xiaomi/wayne/wayne:8.1.0/OPM1.171019.011/V9.5.11.0.ODCCNFA:user/release-keys"
+BUILD_FINGERPRINT := "google/taimen/taimen:9/PQ1A.190105.004/5148680:user/release-keys"
 
 TARGET_VENDOR_PRODUCT_NAME := wayne
