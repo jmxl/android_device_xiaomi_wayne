@@ -78,6 +78,9 @@ endif
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
 
+# APEX image
+DEXPREOPT_GENERATE_APEX_IMAGE := true
+
 # Audio
 BOARD_USES_ALSA_AUDIO := true
 USE_CUSTOM_AUDIO_POLICY := 1
