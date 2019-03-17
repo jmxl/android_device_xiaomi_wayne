@@ -35,9 +35,6 @@ PRODUCT_MODEL := Mi 6X
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="wayne" \
-    TARGET_DEVICE="wayne" \
-    PRIVATE_BUILD_DESC="taimen-user 9 PQ1A.190105.004 5148680 release-keys"
-
-BUILD_FINGERPRINT := "google/taimen/taimen:9/PQ1A.190105.004/5148680:user/release-keys"
+    TARGET_DEVICE="wayne"
 
 TARGET_VENDOR_PRODUCT_NAME := wayne
