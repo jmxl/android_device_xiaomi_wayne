@@ -30,7 +30,7 @@ DEVICE_PATH := device/xiaomi/wayne
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
 	$(DEVICE_PATH)/overlay \
-	$(DEVICE_PATH)/overlay-lineage
+	$(DEVICE_PATH)/overlay-mokee
 
 # Audio
 PRODUCT_COPY_FILES += \

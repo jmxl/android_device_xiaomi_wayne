@@ -22,5 +22,5 @@
 #
 
 for var in eng user userdebug; do
-    add_lunch_combo lineage_wayne-$var
+    add_lunch_combo mk_wayne-$var
 done

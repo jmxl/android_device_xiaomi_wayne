@@ -21,6 +21,6 @@
 # definition file).
 #
 
-# inherit MI 6X HAVOC device config
+# inherit MI 6X Mokee device config
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_wayne.mk
+    $(LOCAL_DIR)/mk_wayne.mk

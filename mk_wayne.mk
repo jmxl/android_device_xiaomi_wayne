@@ -21,13 +21,13 @@
 # definition file).
 #
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Mokee stuff.
+$(call inherit-product, vendor/mk/config/common_full_phone.mk)
 
 # Inherit from wayne device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-PRODUCT_NAME := lineage_wayne
+PRODUCT_NAME := mk_wayne
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := wayne
 PRODUCT_MANUFACTURER := Xiaomi
