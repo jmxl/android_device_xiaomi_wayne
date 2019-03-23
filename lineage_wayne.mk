@@ -28,10 +28,10 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 PRODUCT_NAME := lineage_wayne
-PRODUCT_BRAND := Xiaomi
+PRODUCT_BRAND := xiaomi
 PRODUCT_DEVICE := wayne
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_MODEL := Mi 6X
+PRODUCT_MODEL := MI 6X
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="wayne" \
