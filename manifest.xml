@@ -655,16 +655,6 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.qti.hardware.soter</name> 
-        <transport>hwbinder</transport> 
-        <version>1.0</version> 
-        <interface> 
-            <name>ISoter</name> 
-            <instance>default</instance> 
-        </interface> 
-        <fqname>@1.0::ISoter/default</fqname> 
-    </hal> 
-    <hal format="hidl">
         <name>vendor.qti.hardware.tui_comm</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -685,7 +675,7 @@
     <hal format="hidl">
         <name>vendor.qti.imsrtpservice</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
+        <version>1.1</version>
         <interface>
             <name>IRTPService</name>
             <instance>imsrtpservice</instance>
@@ -694,7 +684,7 @@
     <hal format="hidl">
          <name>vendor.xiaomi.hardware.mlipay</name>
          <transport>hwbinder</transport>
-         <version>1.0</version>
+         <version>1.1</version>
          <interface>
              <name>IMlipayService</name>
              <instance>default</instance>
@@ -703,4 +693,12 @@
     <sepolicy>
         <version>27.0</version>
     </sepolicy>
+        <name>vendor.qti.hardware.soter</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ISoter</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </manifest>
