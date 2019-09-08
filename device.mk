@@ -383,6 +383,10 @@ PRODUCT_PACKAGES += \
     libipanat \
     liboffloadhal
 
+# Shims
+PRODUCT_PACKAGES += \
+    camera.sdm660_shim
+
 # TextClassifier smart selection model files
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
